@@ -121,10 +121,6 @@
       "user-id": "46FADF31D76E795B"
     },
     {
-      "name": "1x the lil guy",
-      "user-id": "4F37AE2B357CCBB9"
-    },
-    {
       "name": "GUFF",
       "user-id": "2F2A7D5D76A8F4A6"
     },
@@ -137,17 +133,9 @@
       "user-id": "BECDDF71F0BE97EB"
     },
     {
-      "name": "Durrrying it so good rn aughhh",
-      "user-id": "621C2851D942720B"
-    },
-    {
       "name": "Jolyne",
       "user-id": "AADF567C802A2B5C"
     },
-    {
-      "name": "1x1x1xSkidr",
-      "user-id": "707651F6F1AD29F8"
-    }
   ],
 
   "super-admins": [
@@ -155,9 +143,5 @@
     "Twig",
     "Lexi",
     "Glitch",
-    "Kormakur",
-    "Morse",
-    "Obgay",
-    "Jolyne"
   ]
 }

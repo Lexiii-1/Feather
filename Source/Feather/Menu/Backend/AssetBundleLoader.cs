@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Reflection;
 using UnityEngine;
 using BepInEx;
@@ -106,38 +106,6 @@ namespace Feather.Menu.Backend
                         }
                     }
                 }
-            }
-        }
-    }
-
-    public class MaterialOffsetAnimator : MonoBehaviour
-    {
-        private List<Material> _materials = new List<Material>();
-        private float _speed = 0.4f;
-
-        private void Awake()
-        {
-            Renderer renderer = GetComponent<Renderer>();
-            if (renderer != null)
-            {
-                _materials.AddRange(renderer.materials);
-            }
-        }
-
-        private void Update()
-        {
-            float offset = Time.time * _speed;
-            foreach (Material mat in _materials)
-            {
-                mat.mainTextureOffset = new Vector2(offset, offset);
-            }
-        }
-
-        private void OnDestroy()
-        {
-            foreach (Material mat in _materials)
-            {
-                Destroy(mat);
             }
         }
     }

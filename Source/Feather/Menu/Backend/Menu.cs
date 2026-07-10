@@ -1,4 +1,4 @@
-﻿using Feather.Menu.Backend;
+using Feather.Menu.Backend;
 using GorillaLocomotion;
 using GorillaLocomotion.Climbing;
 using System.Collections.Generic;

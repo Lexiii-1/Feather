@@ -1,4 +1,4 @@
-﻿using BepInEx.Configuration;
+using BepInEx.Configuration;
 using Feather.Menu.Backend.Mods;
 using Feather.Menu.Extra;
 using Photon.Pun;
@@ -16,6 +16,13 @@ namespace Feather.Menu.Backend
         internal static readonly List<ModCategory> categories = new();
         public static Stack<ModCategory> CategoryStack = new();
         public static int Page = 1;
+
+        public static void RegisterCustomButton(string categoryName, ModButton button)
+        {
+            var cat = FindCategory(categoryName);
+            if (cat != null) cat.Buttons.Add(button);
+        }
+
         public static int GetBtnCount()
         {
             if (AssetBundleLoader.MenuInstance == null) return 0;
@@ -63,11 +70,6 @@ namespace Feather.Menu.Backend
         public static ModButton CreateExternalButton(string name, System.Action action, string tip = null)
         {
             return new ModButton(name, action, tip);
-        }
-
-        public static ModButton CreateCustomButton(string name, Action onPress, Func<string> nameGetter, string tip = null)
-        {
-            return new ModButton(name, onPress, nameGetter, tip);
         }
 
         public static bool Enabled(string categoryName, string buttonName)
@@ -169,6 +171,7 @@ namespace Feather.Menu.Backend
     {
         private string _baseName;
         private Func<string> _nameGetter;
+        private Action _customPress;
         public string Name => _nameGetter != null ? _nameGetter() : (IsFloat ? $"{_baseName}: {FloatEntry.Value:F1}" : _baseName);
         public ConfigEntry<bool> Entry { get; }
         public ConfigEntry<float> FloatEntry { get; }
@@ -177,7 +180,6 @@ namespace Feather.Menu.Backend
         private float Step;
         private bool Sync;
         private string Tip;
-
         private Action Action { get; }
         private Action UpdateAction { get; }
         private Action DisableAction { get; }
@@ -209,14 +211,15 @@ namespace Feather.Menu.Backend
         public ModButton(string name, Action action, string tip = null)
         { _baseName = name; Action = action; Tip = tip; }
 
-        public ModButton(string name, Action action, Func<string> nameGetter, string tip = null)
-        { _baseName = name; Action = action; _nameGetter = nameGetter; Tip = tip; }
+        public ModButton(string name, Action pressAction, Func<string> nameGetter, string tip = null)
+        { _baseName = name; _customPress = pressAction; _nameGetter = nameGetter; Tip = tip; }
 
         public void Press()
         {
             if (!string.IsNullOrEmpty(Tip)) NotiLib.SendNotification(Tip, 2000);
 
-            if (IsToggle) Entry.Value = !Entry.Value;
+            if (_customPress != null) _customPress();
+            else if (IsToggle) Entry.Value = !Entry.Value;
             else if (IsFloat)
             {
                 bool subtract = InputPoller.Instance.GetLeftTrigger();

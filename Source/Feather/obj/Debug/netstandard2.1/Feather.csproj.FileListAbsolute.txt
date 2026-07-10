@@ -1,0 +1,10 @@
+C:\Users\reese\source\repos\Feather\Feather\bin\Debug\netstandard2.1\Feather.deps.json
+C:\Users\reese\source\repos\Feather\Feather\bin\Debug\netstandard2.1\Feather.dll
+C:\Users\reese\source\repos\Feather\Feather\bin\Debug\netstandard2.1\Feather.pdb
+C:\Users\reese\source\repos\Feather\Feather\obj\Debug\netstandard2.1\Feather.csproj.AssemblyReference.cache
+C:\Users\reese\source\repos\Feather\Feather\obj\Debug\netstandard2.1\Feather.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reese\source\repos\Feather\Feather\obj\Debug\netstandard2.1\Feather.AssemblyInfoInputs.cache
+C:\Users\reese\source\repos\Feather\Feather\obj\Debug\netstandard2.1\Feather.AssemblyInfo.cs
+C:\Users\reese\source\repos\Feather\Feather\obj\Debug\netstandard2.1\Feather.csproj.CoreCompileInputs.cache
+C:\Users\reese\source\repos\Feather\Feather\obj\Debug\netstandard2.1\Feather.dll
+C:\Users\reese\source\repos\Feather\Feather\obj\Debug\netstandard2.1\Feather.pdb

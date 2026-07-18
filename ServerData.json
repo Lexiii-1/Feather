@@ -8,10 +8,6 @@
       "user-id": "911ECC6C28E39502"
     },
     {
-      "name": "ALTA",
-      "user-id": "F6C39B7FB09ABD98"
-    },
-    {
       "name": "Lexi",
       "user-id": "467114172575CC01"
     },
@@ -22,76 +18,11 @@
     {
       "name": "Lexi",
       "user-id": "ECA1FAD872EC5EF3"
-    },
-    {
-      "name": "Kormakur",
-      "user-id": "E249F41EABC2B38E"
-    },
-    {
-      "name": "Kormakur",
-      "user-id": "7A08AEE19B754D6B"
-    },
-    {
-      "name": "Kormakur",
-      "user-id": "F18FB8135CB40572"
-    },
-    {
-      "name": "Jolyne",
-      "user-id": "B09E96D2A9159321"
-    },
-    {
-      "name": "Jolyne",
-      "user-id": "46FADF31D76E795B"
-    },
-    {
-      "name": "1x the lil guy",
-      "user-id": "4F37AE2B357CCBB9"
-    },
-    {
-      "name": "GUFF",
-      "user-id": "2F2A7D5D76A8F4A6"
-    },
-    {
-      "name": "Morse",
-      "user-id": "74664FD6ED873236"
-    },
-    {
-      "name": "Obgay",
-      "user-id": "BECDDF71F0BE97EB"
-    },
-    {
-      "name": "Durrrying it so good rn aughhh",
-      "user-id": "621C2851D942720B"
-    },
-    {
-      "name": "Jolyne",
-      "user-id": "AADF567C802A2B5C"
-    },
-    {
-      "name": "1x1x1xSkidr",
-      "user-id": "707651F6F1AD29F8"
-    },
-    {
-      "name": "Objection",
-      "user-id": "B52B30926D69DEAE"
-    },
-    {
-      "name": "Deez",
-      "user-id": "C9027C8A184048B_Fuckingbitch"
-    },
-    {
-      "name": "Loggieman",
-      "user-id": "9022A308930664E3"
     }
   ],
 
   "super-admins": [
     "Lexi",
     "Glitch",
-    "Kormakur",
-    "Morse",
-    "Obgay",
-    "Jolyne",
-    "Objection"
   ]
 }
